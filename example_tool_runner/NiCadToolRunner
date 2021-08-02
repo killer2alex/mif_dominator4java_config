@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Wie in der README von *NiCad* empfohlen wird unser System in den `systems` Ordner von
+# *NiCad* kopiert und von dort gearbeitet. Die Verarbeitung und die Rückgabe zur Kommandozeile
+# wird durch das Python-Programm `mif_nicad_formatter.py` durchgeführt
+
+# $1 = system directory
+# $2 = language {java, c, cs, py}
+# $3 = frameowkr install dir
+# $4 = tool dir
+# $5 = fragmnet type (function|block)
+# $6 = tool runner directory
+# $7 = minlines
+
+# Der Systemname ist beim MIF immer `mutantbase`, weshalb dies hier mit angegeben wird
+# Dies ist wichtig, damit der `mif_nicad_formatter` die Pfade zum Ausgangssystem aufbauen kann.
+# system_name = $(basename $1) => funktioniert nicht
+cp -R $1 /home/alexanderhoerig/opt/NiCad-6.2/systems/mutantbase
+cd /home/alexanderhoerig/opt/NiCad-6.2
+./nicad6 functions java systems/mutantbase default-report > /dev/null 2> /dev/null
+# Echo Befehl wird durch Python übernommen.
+python3 mif_nicad_formatter.py $1

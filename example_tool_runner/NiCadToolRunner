@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# Wie in der README von *NiCad* empfohlen wird unser System in den `systems` Ordner von
-# *NiCad* kopiert und von dort gearbeitet. Die Verarbeitung und die Rückgabe zur Kommandozeile
-# wird durch das Python-Programm `mif_nicad_formatter.py` durchgeführt
+# Um die Entwicklung und Fehlersuche zu vereinfachen, wird der Großteil des Tool-Runners
+# in ein Python-Skript ausgelagert. Dieses kann einzeln getestet und debugged werden.
+# Am Ende des Python-Skripts wird (wie vom MIF gefordert) der Pfad zu einer Datei an die
+# Komandozeile übergeben. In dieser Datei lassen sich gefundene Klonpaare in der vom MIF
+# geforderten Format finden.
 
-# $1 = system directory
+# Der Systemname ist beim MIF immer `mutantbase`
+
+# $1 = system directory 
 # $2 = language {java, c, cs, py}
 # $3 = frameowkr install dir
 # $4 = tool dir
@@ -12,11 +16,6 @@
 # $6 = tool runner directory
 # $7 = minlines
 
-# Der Systemname ist beim MIF immer `mutantbase`, weshalb dies hier mit angegeben wird
-# Dies ist wichtig, damit der `mif_nicad_formatter` die Pfade zum Ausgangssystem aufbauen kann.
-# system_name = $(basename $1) => funktioniert nicht
-cp -R $1 /home/alexanderhoerig/opt/NiCad-6.2/systems/mutantbase
-cd /home/alexanderhoerig/opt/NiCad-6.2
-./nicad6 functions java systems/mutantbase default-report > /dev/null 2> /dev/null
-# Echo Befehl wird durch Python übernommen.
-python3 mif_nicad_formatter.py $1
+# Hierd wird zum Ordner des Skripts gegangen, um es dann auszuführen
+cd /media/MIF/dominator4java-mutation/scripts
+python3 nicad_tool_runner.py $1 $2 $4 $5

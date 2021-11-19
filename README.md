@@ -4,4 +4,4 @@ Ermöglicht den Benchmark des dominator4java mittels des *MutationInjectionFrame
 
 - [Hinweise zur Installation](docs/MIFSetupAndSettings.md)
 - [Beschreibung und Verwendung des MIF](docs/MIFUsage.md)
-- [Reproduktion des Clone-Benchmark-Papers (2019)][docs/ReproducePaper2019.md]
+- [Reproduktion des Clone-Benchmark-Papers (2019)](docs/ReproducePaper2019.md)

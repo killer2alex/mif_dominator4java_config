@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Der Systemname ist beim MIF immer `mutantbase`
+
+# $1 = system directory 
+# $2 = language {java, c, cs, py}
+# $3 = frameowkr install dir
+# $4 = tool dir
+# $5 = fragmnet type (function|block)
+# $6 = tool runner directory
+# $7 = minlines
+
+result="mif_spoon.txt"
+
+cd $4; echo $PWD
+java -Xms8G -Xmx8G  -jar build/libs/SPOON.jar -x --directory="$1" --error-file=errors.txt > "$result"
+
+resultPath="${4}/${result}"
+echo "$resultPath"

@@ -16,6 +16,6 @@
 # $6 = tool runner directory
 # $7 = minlines
 
-# Hierd wird zum Ordner des Skripts gegangen, um es dann auszuführen
+# Hier wird zum Ordner des Skripts gegangen, um es dann auszuführen
 cd /media/MIF/dominator4java-mutation/scripts
 python3 nicad_tool_runner.py $1 $2 $4 $5

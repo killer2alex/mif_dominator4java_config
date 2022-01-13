@@ -105,7 +105,7 @@ def get_clones_from_nicad_xml(xml_file, system_path):
     return clone_list
 
 
-if __name__ == '__main__':
+def main():
 
     
     # Werte zum testen #
@@ -140,3 +140,7 @@ if __name__ == '__main__':
     
     # Gibt die Datei der gefundenen Clones an MIF zurück
     print(mif_style_clone_file)
+
+
+if __name__ == '__main__':
+    main()

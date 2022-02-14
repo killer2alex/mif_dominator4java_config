@@ -2,6 +2,7 @@
 
 Nachdem das MutationInjectionFramework(MIF/MIF-Tool) installiert wurde (siehe [Setup und Settings](../docs/MIFSetupAndSettings.md)) kann das MutationInjectionFramework aus dessen Root-Ordner (Nach der Installationsanleitung `~/MutationInjectionFramework/`) heraus mittels `./run` gestartet werden.
 Das führt zum Root-Menü, in dem entweder ein Experiment geladen oder ein neues Experiment erstellt werden kann:
+
 ![Root-Menü des MIF](assets/MIF_S0_Root_Menu.png)
 
 Das MIF-Tool durchläuft für die Evaluation eines *Clone Detectors* sechs Schritte, von Schritt 0 bis Schritt 5.
@@ -30,7 +31,9 @@ Wird dieser Prozess abgebrochen, ist das Experiment _corrupted_ und daher nicht 
 
 Nachdem das Experiment erstellt wurde, kann die Erzeugung der Klone begonnen werden. 
 Die Anzahl an möglichen Einstellungen ist im folgenden Bild zu sehen:
+
 ![Generation Phase Menu](assets/MIF_S1_Base_Menu.png)
+
 Nachdem alle Einstellungen getroffen wurden, wird die Erzeugung der Klone mit `s` begonnen. 
 Das kann -- in Abhängigkeit von den Einstellungen -- fast einen ganzen Tag in Anspruch nehmen.
 Wird dieser Prozess abgebrochen, ist das Experiment _corrupted_ und daher nicht mehr verwendbar.
@@ -38,7 +41,10 @@ Wird dieser Prozess abgebrochen, ist das Experiment _corrupted_ und daher nicht 
 ### S3 -- Evaluation Setup Stage
 
 In diesem Schritt können _Clone Detectors_ angegeben werden, welche dann mittels der erzeugten Klone evaluiert werden:
+
+
 ![Evaluation Setup Stage Menu](assets/MIF_S3_Base_Menu.png)
+
 Es können dabei beliebig viele solcher Clone Detectors angegeben werden.
 Dafür sind jeweils die folgenden Informationen notwendig:ddd
 1. Name des Clone Detectors
@@ -57,6 +63,7 @@ Wird der Prozess unterbrochen, **ist es möglich** diesen wieder aufzunehmen und
 ### S5 -- Evaluation Results Stage
 
 Hier können die Resultate der _Clone Detectors_ angesehen werden oder zum Schritt 3 (S3 -- Evaluation Setup Stage) zurückgekehrt werden:
+
 ![Evaluation Setup Stage Menu](assets/MIF_S5_Base_Menu.png)
 
 ## Weitere Hinweise und FAQs

@@ -47,7 +47,5 @@ Dabei wird von einem Ubuntu-Server-System ausgegangen, wobei die Anweisungen bei
 
 4. **dos2unix installieren**
     mittels `sudo apt install dos2unix`.
-5. **`mif_run`-Skript erstellen**
-    damit kann der Aufruf des MIF vereinfacht werden #TODO
 
 Nachdem das MIF erfolgreich installiert wurde, kann es jetzt eingesetzt werden.

@@ -1,13 +1,13 @@
 # Usage/Verwendung des MIF
 
 Nachdem das MutationInjectionFramework(MIF/MIF-Tool) installiert wurde (siehe [Setup und Settings](../docs/MIFSetupAndSettings.md)) kann das MutationInjectionFramework aus dessen Root-Ordner (Nach der Installationsanleitung `~/MutationInjectionFramework/`) heraus mittels `./run` gestartet werden.
-Das führt zum Root-Menü, in dem entweder ein Experiment geladen oder ein neues Experiment erstellt werden kann.
-![Root-Menü des MIF](docs/assets/MIF_S0_Root_Menu.png)
+Das führt zum Root-Menü, in dem entweder ein Experiment geladen oder ein neues Experiment erstellt werden kann:
+![Root-Menü des MIF](assets/MIF_S0_Root_Menu.png)
 
 Das MIF-Tool durchläuft für die Evaluation eines *Clone Detectors* sechs Schritte, von Schritt 0 bis Schritt 5.
 Der Schritt 0 stellt die Erstellung eines neuen Projektes dar.
 Dabei werden einige allgemeine Angaben gemacht.
-Bei drei der restlichen fünf Schritte (1, 3 und 5) hällt das Programm an, um weitere Informationen zum Ablauf auszugeben oder einzuholen.
+dBei drei der restlichen fünf Schritte (1, 3 und 5) hällt das Programm an, um weitere Informationen zum Ablauf auszugeben oder einzuholen.
 Die anderen beiden Schritte (2 und 4) laufen ohne wirklichen Einfluss des Benutzers durch.
 
 ## Beschreibung der einzelnen Schritte
@@ -37,10 +37,10 @@ Wird dieser Prozess abgebrochen, ist das Experiment _corrupted_ und daher nicht 
 
 ### S3 -- Evaluation Setup Stage
 
-In diesem Schritt können _Clone Detectors_ angegeben werden, welche dann mittels der erzeugten Klone evaluiert werden. 
+In diesem Schritt können _Clone Detectors_ angegeben werden, welche dann mittels der erzeugten Klone evaluiert werden:
 ![Evaluation Setup Stage Menu](assets/MIF_S3_Base_Menu.png)
 Es können dabei beliebig viele solcher Clone Detectors angegeben werden.
-Dafür sind jeweils die folgenden Informationen notwendig:
+Dafür sind jeweils die folgenden Informationen notwendig:ddd
 1. Name des Clone Detectors
 2. Beschreibung des Clone Detectors
 3. Absoluter Pfad zum Installationsordner des Detectors
@@ -56,7 +56,7 @@ Wird der Prozess unterbrochen, **ist es möglich** diesen wieder aufzunehmen und
 
 ### S5 -- Evaluation Results Stage
 
-Hier können die Resultate der _Clone Detectors_ angesehen werden oder zum Schritt 3 (S3 -- Evaluation Setup Stage) zurückgekehrt werden.
+Hier können die Resultate der _Clone Detectors_ angesehen werden oder zum Schritt 3 (S3 -- Evaluation Setup Stage) zurückgekehrt werden:
 ![Evaluation Setup Stage Menu](assets/MIF_S5_Base_Menu.png)
 
 ## Weitere Hinweise und FAQs

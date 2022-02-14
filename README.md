@@ -1,4 +1,4 @@
-# dominator4java mutation
+# dominator4java Mutation
 
 Ermöglicht den Benchmark des dominator4java mittels des *MutationInjectionFrameworks* (im Folgenden MIF) von J. Svajlenko und C. K. Roy.
 

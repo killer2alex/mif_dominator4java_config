@@ -1,7 +1,7 @@
 
 # Reproduktion des Clone-Benchmark Papers von 2019
 
-Es wurde das Vorgehen aus dem Paper (*The Mutation and Injection Framework: Evaluating Clone Detection Tools with Mutation Analysis*)[https://www.researchgate.net/publication/332703085_The_Mutation_and_Injection_Framework_Evaluating_Clone_Detection_Tools_with_Mutation_Analysis] emuliert. 
+Es wurde das Vorgehen aus dem Paper [*The Mutation and Injection Framework: Evaluating Clone Detection Tools with Mutation Analysis*](https://www.researchgate.net/publication/332703085_The_Mutation_and_Injection_Framework_Evaluating_Clone_Detection_Tools_with_Mutation_Analysis) emuliert. 
 Dabei wurden das MIF-Tool in verschiedenen Stadien der Verarbeitung festgehalten.
 
 Bei allen Eperimenten handelt es sich um *Automatic clon synthesis experiments* in der Sprache *Java* welche die vom MIF zur Verfügung gestellten repositories (siehe `MutationInjectionFramework/data/repositories/java`)nutzen.
@@ -20,7 +20,7 @@ Die Informationen kommen in der selben Reihenfolge im Namen vor, wie sie hier pr
 ## Hinweise zur Durchführung der einzelnen Schritte (Stages)
 
 ### S1: Generation Stage
-Es wurden -- wie auch im Paper (@svalenko2019, S.15) -- die folgenden Einstellungen vorgenommen(Option) um zum Schritt 3 (S3) zu kommen:
+Es wurden -- wie auch im Paper (@svalenko2019, S.15) -- die folgenden Einstellungen vorgenommen:
 |Schalter| Name | Wert| Bemerkung|
 |--------|------|-----|----------|
 | [c] | Mutator and Mutations      | [r]                           | Damit werden die Standard (default) Optionen ausgewählt                          |

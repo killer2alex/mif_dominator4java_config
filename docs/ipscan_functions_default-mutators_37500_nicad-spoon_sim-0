@@ -1,0 +1,287 @@
+********************************************************************************
+****************************   Evaluation  Report   ****************************
+********************************************************************************
+Experiment: /media/MIF/MIF_Reprod_2019/S5_ipscan_functions_default-mutators_37500_nicad-spoon_sim-0
+
+
+********************************************************************************
+                                     Corpus                                     
+********************************************************************************
+================================================================================
+    Properties:
+================================================================================
+                          Language: java
+                 Clone Granularity: function
+                     Max Fragments: 250
+                  Injection Number: 10
+          Minimum Clone Similarity: 0.7
+              Mutation Containment: 0.15
+ Minimum Clone Fragment Size Lines: 15
+ Maximum Clone Fragment Size Lines: 200
+Minimum Clone Fragment Size Tokens: 100
+Maximum Clone Fragment Size Tokens: 2000
+                 Operator Attempts: 10
+                  Mutator Attempts: 100
+--------------------------------------------------------------------------------
+
+================================================================================
+    Statistics:
+================================================================================
+Number Selected Fragments: 250
+Number of Geneated Clones: 3750
+ Number of Mutant Systems: 37500
+--------------------------------------------------------------------------------
+
+================================================================================
+    Mutation Operators:
+================================================================================
+[1]
+        Name: mCC_BT
+  Description: Change in comments: comment added between two tokens..
+  Clone Type: 1
+  Executable: /media/MIF/MutationInjectionFramework/operators/mCC_BT
+[2]
+        Name: mCC_EOL
+  Description: Change in comments: comment added at end of a line.
+  Clone Type: 1
+  Executable: /media/MIF/MutationInjectionFramework/operators/mCC_EOL
+[3]
+        Name: mNM_A
+  Description: Change in formatting: a newline is added between two tokens..
+  Clone Type: 1
+  Executable: /media/MIF/MutationInjectionFramework/operators/mCF_A
+[4]
+        Name: mNL_R
+  Description: Change in formatting: a newline is removed (without changing meangin).
+  Clone Type: 1
+  Executable: /media/MIF/MutationInjectionFramework/operators/mCF_R
+[5]
+        Name: mCF_A
+  Description: Change in whitespace: a space or tab is added between two tokens.
+  Clone Type: 1
+  Executable: /media/MIF/MutationInjectionFramework/operators/mCW_A
+[6]
+        Name: mCF_R
+  Description: Change in whitespace: a space or tab is removed (without changing meaning).
+  Clone Type: 1
+  Executable: /media/MIF/MutationInjectionFramework/operators/mCW_R
+[7]
+        Name: mSRI
+  Description: Renaming of identifier: systamtic renaming of all instances of a chosen identifier.
+  Clone Type: 2
+  Executable: /media/MIF/MutationInjectionFramework/operators/mSRI
+[8]
+        Name: mARI
+  Description: Renaming of identifier: arbitrary renaming of a single identifier instance.
+  Clone Type: 2
+  Executable: /media/MIF/MutationInjectionFramework/operators/mARI
+[9]
+        Name: mRL_N
+  Description: Change in literal value: a number value is replaced.
+  Clone Type: 2
+  Executable: /media/MIF/MutationInjectionFramework/operators/mRL_N
+[10]
+        Name: mRL_S
+  Description: Change in literal value: a string value is replaced.
+  Clone Type: 2
+  Executable: /media/MIF/MutationInjectionFramework/operators/mRL_S
+[11]
+        Name: mIL
+  Description: Insertion of a line of code (without invalidating syntax).
+  Clone Type: 3
+  Executable: /media/MIF/MutationInjectionFramework/operators/mIL
+[12]
+        Name: mDL
+  Description: Deletion of a line of code (without invalidating syntax).
+  Clone Type: 3
+  Executable: /media/MIF/MutationInjectionFramework/operators/mDL
+[13]
+        Name: mML
+  Description: Modification of a whole line ((without invalidating syntax).
+  Clone Type: 3
+  Executable: /media/MIF/MutationInjectionFramework/operators/mML
+[14]
+        Name: mSIL
+  Description: Small insertion within a line (addition of a parameter).
+  Clone Type: 3
+  Executable: /media/MIF/MutationInjectionFramework/operators/mSIL
+[15]
+        Name: mSDL
+  Description: Small deletion within a line (removal of a parameter).
+  Clone Type: 3
+  Executable: /media/MIF/MutationInjectionFramework/operators/mSDL
+--------------------------------------------------------------------------------
+
+================================================================================
+    Mutators:
+================================================================================
+[1]
+    Description: Change in comments: comment added between two tokens..
+     Clone Type: 1
+  Operator List: 1 
+[2]
+    Description: Change in comments: comment added at end of a line.
+     Clone Type: 1
+  Operator List: 2 
+[3]
+    Description: Change in formatting: a newline is added between two tokens..
+     Clone Type: 1
+  Operator List: 3 
+[4]
+    Description: Change in formatting: a newline is removed (without changing meangin).
+     Clone Type: 1
+  Operator List: 4 
+[5]
+    Description: Change in whitespace: a space or tab is added between two tokens.
+     Clone Type: 1
+  Operator List: 5 
+[6]
+    Description: Change in whitespace: a space or tab is removed (without changing meaning).
+     Clone Type: 1
+  Operator List: 6 
+[7]
+    Description: Renaming of identifier: systamtic renaming of all instances of a chosen identifier.
+     Clone Type: 2
+  Operator List: 7 
+[8]
+    Description: Renaming of identifier: arbitrary renaming of a single identifier instance.
+     Clone Type: 2
+  Operator List: 8 
+[9]
+    Description: Change in literal value: a number value is replaced.
+     Clone Type: 2
+  Operator List: 9 
+[10]
+    Description: Change in literal value: a string value is replaced.
+     Clone Type: 2
+  Operator List: 10 
+[11]
+    Description: Insertion of a line of code (without invalidating syntax).
+     Clone Type: 3
+  Operator List: 11 
+[12]
+    Description: Deletion of a line of code (without invalidating syntax).
+     Clone Type: 3
+  Operator List: 12 
+[13]
+    Description: Modification of a whole line ((without invalidating syntax).
+     Clone Type: 3
+  Operator List: 13 
+[14]
+    Description: Small insertion within a line (addition of a parameter).
+     Clone Type: 3
+  Operator List: 14 
+[15]
+    Description: Small deletion within a line (removal of a parameter).
+     Clone Type: 3
+  Operator List: 15 
+--------------------------------------------------------------------------------
+
+
+********************************************************************************
+                              Evaluation  Settings                              
+********************************************************************************
+================================================================================
+    Properties:
+================================================================================
+            Subsume Tolerance: 0.15
+   Recall Required Similarity: 0.0
+Precision Required Similarity: 0.0
+--------------------------------------------------------------------------------
+
+================================================================================
+    Subject Tools:
+================================================================================
+[3]
+         Name: NiCad
+  Description: NiCad
+  Install Dir: /home/alexanderhoerig/opt/NiCad-6.2
+  Tool Runner: /media/MIF/dominator4java-mutation/example_tool_runner/NiCadToolRunner
+[4]
+         Name: STONE-Detector
+  Description: STONE-Detector
+  Install Dir: /media/MIF/dominator4java/SPOON
+  Tool Runner: /media/MIF/dominator4java-mutation/example_tool_runner/SPOONRunner
+--------------------------------------------------------------------------------
+
+********************************************************************************
+                                  Tool Results                                  
+********************************************************************************
+[3] - NiCad
+  Per Type:
+    1 - Recall: 0.9960, Precision: 1.0000
+    2 - Recall: 0.9960, Precision: 1.0000
+    3 - Recall: 0.9960, Precision: 1.0000
+  Per Mutator:
+    1 - Recall: 0.9960, Precision: 1.0000
+    2 - Recall: 0.9960, Precision: 1.0000
+    3 - Recall: 0.9960, Precision: 1.0000
+    4 - Recall: 0.9960, Precision: 1.0000
+    5 - Recall: 0.9960, Precision: 1.0000
+    6 - Recall: 0.9960, Precision: 1.0000
+    7 - Recall: 0.9960, Precision: 1.0000
+    8 - Recall: 0.9960, Precision: 1.0000
+    9 - Recall: 0.9960, Precision: 1.0000
+    10 - Recall: 0.9960, Precision: 1.0000
+    11 - Recall: 0.9960, Precision: 1.0000
+    12 - Recall: 0.9960, Precision: 1.0000
+    13 - Recall: 0.9960, Precision: 1.0000
+    14 - Recall: 0.9960, Precision: 1.0000
+    15 - Recall: 0.9960, Precision: 1.0000
+  Per Mutation Operator:
+    1 - Recall: 0.9960, Precision: 1.0000
+    2 - Recall: 0.9960, Precision: 1.0000
+    3 - Recall: 0.9960, Precision: 1.0000
+    4 - Recall: 0.9960, Precision: 1.0000
+    5 - Recall: 0.9960, Precision: 1.0000
+    6 - Recall: 0.9960, Precision: 1.0000
+    7 - Recall: 0.9960, Precision: 1.0000
+    8 - Recall: 0.9960, Precision: 1.0000
+    9 - Recall: 0.9960, Precision: 1.0000
+    10 - Recall: 0.9960, Precision: 1.0000
+    11 - Recall: 0.9960, Precision: 1.0000
+    12 - Recall: 0.9960, Precision: 1.0000
+    13 - Recall: 0.9960, Precision: 1.0000
+    14 - Recall: 0.9960, Precision: 1.0000
+    15 - Recall: 0.9960, Precision: 1.0000
+[4] - STONE-Detector
+  Per Type:
+    1 - Recall: 0.8884, Precision: 1.0000
+    2 - Recall: 0.8818, Precision: 1.0000
+    3 - Recall: 0.8880, Precision: 1.0000
+  Per Mutator:
+    1 - Recall: 0.8888, Precision: 1.0000
+    2 - Recall: 0.8864, Precision: 1.0000
+    3 - Recall: 0.8904, Precision: 1.0000
+    4 - Recall: 0.8888, Precision: 1.0000
+    5 - Recall: 0.8908, Precision: 1.0000
+    6 - Recall: 0.8852, Precision: 1.0000
+    7 - Recall: 0.8696, Precision: 1.0000
+    8 - Recall: 0.8904, Precision: 1.0000
+    9 - Recall: 0.8756, Precision: 1.0000
+    10 - Recall: 0.8916, Precision: 1.0000
+    11 - Recall: 0.8860, Precision: 1.0000
+    12 - Recall: 0.8840, Precision: 1.0000
+    13 - Recall: 0.8864, Precision: 1.0000
+    14 - Recall: 0.8904, Precision: 1.0000
+    15 - Recall: 0.8932, Precision: 1.0000
+  Per Mutation Operator:
+    1 - Recall: 0.8888, Precision: 1.0000
+    2 - Recall: 0.8864, Precision: 1.0000
+    3 - Recall: 0.8904, Precision: 1.0000
+    4 - Recall: 0.8888, Precision: 1.0000
+    5 - Recall: 0.8908, Precision: 1.0000
+    6 - Recall: 0.8852, Precision: 1.0000
+    7 - Recall: 0.8696, Precision: 1.0000
+    8 - Recall: 0.8904, Precision: 1.0000
+    9 - Recall: 0.8756, Precision: 1.0000
+    10 - Recall: 0.8916, Precision: 1.0000
+    11 - Recall: 0.8860, Precision: 1.0000
+    12 - Recall: 0.8840, Precision: 1.0000
+    13 - Recall: 0.8864, Precision: 1.0000
+    14 - Recall: 0.8904, Precision: 1.0000
+    15 - Recall: 0.8932, Precision: 1.0000
+--------------------------------------------------------------------------------
+
+********************************************************************************
+********************************************************************************

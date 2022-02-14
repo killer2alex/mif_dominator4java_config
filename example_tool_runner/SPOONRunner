@@ -12,8 +12,8 @@
 
 result="mif_spoon.txt"
 
-cd $4; echo $PWD
-java -Xms8G -Xmx8G  -jar build/libs/SPOON.jar -x --directory="$1" --error-file=errors.txt > "$result"
+cd $4
+java -Xms8G -Xmx8G  -jar build/libs/SPOON.jar -x --directory="$1" --error-file=errors.txt > "$result" 2> /dev/null
 
 resultPath="${4}/${result}"
 echo "$resultPath"
